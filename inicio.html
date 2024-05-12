@@ -100,6 +100,7 @@ h2{
 }
 
 
+
 .image-slider {
     overflow: hidden;
     white-space: nowrap;
@@ -111,9 +112,12 @@ h2{
 }
 
 .image-slide img {
-    max-width: 50%;
+    max-width: 30%;
     height: auto;
+    border-radius: 220px; /* Añade bordes redondeados a las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
 }
+
 
 
 section{
@@ -156,7 +160,7 @@ section{
 
 
 
-<body>
+<body style="background-color: #ebf8fd;">
     
 
   <!--Section: Design Block-->
@@ -188,7 +192,7 @@ section{
                 <div class="row">
                     <!-- Tarjeta de servicio 1 -->
                     <div class="col-md-4">
-                        <div class="card">
+                        <div class="card" style="background-color:rgb(233, 205, 233)">
                             <img src="lib/web.jpeg" class="card-img-top" alt="presentaciones">
                             <div class="card-body">
                                 <h5 class="card-title">Te ayudo con todos tus trabajos,tareas y proyectos</h5>
@@ -199,7 +203,7 @@ section{
                     </div>
                     <!-- Tarjeta de servicio 2 -->
                     <div class="col-md-4">
-                        <div class="card">
+                        <div class="card" style="background-color:rgb(171, 252, 253)">
                             <img src="lib/Designer (7).jpeg" class="card-img-top" alt="jardinería">
                             <div class="card-body">
                                 <h5 class="card-title">Jardinería</h5>
@@ -211,7 +215,7 @@ section{
                     <!-- Repite la estructura para más servicios -->
                        <!-- Tarjeta de servicio 3 -->
                        <div class="col-md-4">
-                        <div class="card">
+                        <div class="card" style="background-color:beige">
                             <img src="lib/Designer (8).jpeg" class="card-img-top" alt="jardinería">
                             <div class="card-body">
                                 <h5 class="card-title">Electricista</h5>
@@ -235,7 +239,7 @@ section{
 <br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-<section>
+
 
 
 <div class="image-slider">
@@ -243,18 +247,15 @@ section{
         <img src="lib/Perros.jpeg" alt="Imagen 1">
     </div>
     <div class="image-slide">
-        <img src="lib/Pelohombre.jpeg" alt="Imagen 2">
+        <img src="lib/Pelohombre.jpeg" alt="Imagen 2" >
     </div>
     <div class="image-slide">
-        <img src="lib/Pelomujer.jpeg" alt="Imagen 3">
-    </div>
-    <div class="image-slide">
-        <img src="lib/Pelomujer.jpeg" alt="Imagen 4">
+        <img src="lib/web.jpeg" alt="Imagen 4">
     </div>
     <!-- Agrega más imágenes según sea necesario -->
 </div>
      
-</section>
+
   
 
 
@@ -292,7 +293,7 @@ section{
         slider.style.transform = `translateX(${offset}px)`;
     }
 
-    setInterval(nextSlide, 9000); // Cambia de slide cada 3 segundos
+    setInterval(nextSlide, 4000); // Cambia de slide cada 4 segundos
 });
 
 </script>
