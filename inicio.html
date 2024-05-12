@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+    <meta charset="UTF-8">
+    <title> Servi Land </title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<style>  
+    
+ .navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #cbbcb1;
+}
+
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, .15);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
+
+* {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: rgb(189, 95, 213);
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid rgb(189, 95, 213);
+}
+
+/* Set a style for the submit button */
+
+
+
+.welcome-section {
+            display: flex;
+            justify-content: center; /* Alineación horizontal al centro */
+            align-items: center; /* Alineación vertical al centro */
+            height: 50vh; /* Establece la altura al 100% del viewport */
+        }
+
+        /* Estilos para el contenido dentro de la sección */
+        .welcome-section .container {
+            text-align: center; /* Alineación del texto al centro */
+        }
+
+.featured-services{
+            display: flex;
+            justify-content: center; /* Alineación horizontal al centro */
+            align-items: center; /* Alineación vertical al centro */
+            height: 50vh; /* Establece la altura al 100% del viewport */
+            background-color: #ebf8fd;
+        }
+
+      
+h2{
+    align-items: center;
+    align-content: center;
+}
+
+
+.image-slider {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.image-slide {
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+.image-slide img {
+    max-width: 50%;
+    height: auto;
+}
+
+
+section{
+    background-color: #ebf8fd;
+}
+
+</style>
+
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+    <div class="container">
+      <a class="navbar-brand" href="#!"><span style="color: #5e9693;">Servi</span><span style="color: #fff;">Land</span></a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!"></a>
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+  </header>
+
+
+
+<body>
+    
+
+  <!--Section: Design Block-->
+  <section style="background-color:#ebf8fd;">
+    <!-- Intro -->
+   
+
+ 
+          <section class="welcome-section" >
+            <div class="container">
+                <h2>Bienvenido a ServiLand</h2 style="center" >
+                <p>Somos tu destino para servicios personalizados y de calidad.<br>
+                     Ofrecemos una amplia gama de servicios para satisfacer tus necesidades, <br>
+                     desde jardinería hasta impresión y mucho más.</p>
+                <a href="servicios.html" class="servicios">Explora Nuestros Servicios </a>
+
+                
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <br>
+        
+    
+        <section class="featured-services" >
+            <div class="container">
+                <h2>Servicios Destacados</h2>
+                <div class="row">
+                    <!-- Tarjeta de servicio 1 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="lib/web.jpeg" class="card-img-top" alt="presentaciones">
+                            <div class="card-body">
+                                <h5 class="card-title">Te ayudo con todos tus trabajos,tareas y proyectos</h5>
+                                <p class="card-text">Hago presentaciones de power point, excel, word. Te ayudo hacer tu curriculum, tesis...</p>
+                                <a href="Presentaciones.html" class="btn btn-primary">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta de servicio 2 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="lib/Designer (7).jpeg" class="card-img-top" alt="jardinería">
+                            <div class="card-body">
+                                <h5 class="card-title">Jardinería</h5>
+                                <p class="card-text">Soy jardiero con mas de 10 años de experiencia. Ofrezo mis servicios de jardinería</p>
+                                <a href="#" class="btn btn-primary">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repite la estructura para más servicios -->
+                       <!-- Tarjeta de servicio 3 -->
+                       <div class="col-md-4">
+                        <div class="card">
+                            <img src="lib/Designer (8).jpeg" class="card-img-top" alt="jardinería">
+                            <div class="card-body">
+                                <h5 class="card-title">Electricista</h5>
+                                <p class="card-text">Si tienes algún trabajo de electricidad no dudes en llamarme</p>
+                                <a href="#" class="btn btn-primary">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+  
+    </div>
+</section>
+
+<br>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<section>
+
+
+<div class="image-slider">
+    <div class="image-slide">
+        <img src="lib/Perros.jpeg" alt="Imagen 1">
+    </div>
+    <div class="image-slide">
+        <img src="lib/Pelohombre.jpeg" alt="Imagen 2">
+    </div>
+    <div class="image-slide">
+        <img src="lib/Pelomujer.jpeg" alt="Imagen 3">
+    </div>
+    <div class="image-slide">
+        <img src="lib/Pelomujer.jpeg" alt="Imagen 4">
+    </div>
+    <!-- Agrega más imágenes según sea necesario -->
+</div>
+     
+</section>
+  
+
+
+
+
+
+
+    
+       
+        
+   
+
+
+
+</Body>
+
+
+        
+</html>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const slider = document.querySelector('.image-slider');
+    const slides = document.querySelectorAll('.image-slide');
+    let currentSlide = 0;
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateSlider();
+    }
+
+    function updateSlider() {
+        const offset = -currentSlide * slides[0].offsetWidth;
+        slider.style.transform = `translateX(${offset}px)`;
+    }
+
+    setInterval(nextSlide, 9000); // Cambia de slide cada 3 segundos
+});
+
+</script>
