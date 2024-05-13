@@ -69,28 +69,53 @@
   border: 2px solid rgb(189, 95, 213);
 }
 
-/* Set a style for the submit button */
-.btn {
-  background-color: rgb(189, 95, 213);
-  color: white;
-  padding: 15px 20px;
-  border: none;
+.button-51 {
+  background-color: transparent;
+  border: 1px solid #266DB6;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-51:hover,
+.button-51:active {
+  outline: 0;
+}
+
+.button-51:hover {
+  background-color: transparent;
   cursor: pointer;
+}
+
+.button-51:before {
+  background-color: #D5EDF6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
   width: 100%;
-  opacity: 0.9;
-  border-radius: 80px;
+  z-index: -1;
 }
 
-.btn:hover {
-  opacity: 1;
+.button-51:hover:before {
+  background-color: #6DCFF6;
 }
 
-form{
-  height: 200px;
-  width: 300px;
-  margin-top: 20px;
-  margin-left: 630px;
-
+@media (min-width: 768px) {
+  .button-51 {
+    padding: 16px 32px;
+  }
 }
 
 
@@ -101,7 +126,7 @@ form{
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
     <div class="container">
-      <a class="navbar-brand" href="#!"><span style="color: #5e9693;">Servi</span><span style="color: #fff;">Land</span></a>
+      <a class="navbar-brand" href="#!"><span style="color: #5e9693;">Servi</span><span style="color: #0b80c961;">Land</span></a>
       <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
         data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -128,17 +153,10 @@ form{
   </nav>
   <!-- Navbar -->
 
-  <!--Section: Design Block-->
-  <section>
-    <!-- Intro -->
-    <div id="intro" class="bg-image vh-100" style="
-          background-color: #ebf8fd">
+  <Body>
 
-          <br>
-          <br>
-          <br>
-
-
+ 
+<br><br>
   <!-- Sección de Servicios -->
   <section id="servicios" class="py-5">
     <div class="container">
@@ -146,21 +164,49 @@ form{
         <div class="row">
             <!-- Tarjeta de Servicio 1 -->
             <div class="col-lg-4 mb-4">
-                <div class="card h-100">
-                    <img src="lib/Perros.jpeg" class="card-img-top" alt="...">
+                <div class="card h-100" style="background-color: transparent; border: none;">
+                    <img src="lib/Perros.jpeg" class="card-img-top" alt="" style="border-radius: 200px;border-color: black;">
                     <div class="card-body">
                       <center>  <h5 class="card-title">Grooming</h5></center>
-                       <center> <p class="card-text" style="font-size: smaller; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Grooming para mascotas, baño , corte de uñas 
-                            <br> Llama a mi numero 61710209 <br>
-                            Precios accesibles <br>
-                            Grooming completo 10000 <br>
-                            Corte solo 7000 <br>
-                            Baño 5000 <br>
-                            Corte de uñas 3000.</p> </center>
+                       <center> <p class="card-text" >"Ofrecemos servicios de grooming de calidad para tu mascota. Desde baños relajantes hasta cortes de pelo estilizados,
+                         nos enfocamos en hacer que tu mascota se vea y se sienta genial. Reserva una cita hoy y deja que tu 
+                         amigo peludo disfrute de una experiencia de grooming excepcional.".</p> </center>
+                         <br>
+                         <center> <button class="button-51" role="button">Obtener Servicio</button></center>
                     </div>
                 </div>
             </div>
             <!-- Repite esta estructura para más servicios -->
+            <div class="col-lg-4 mb-4">
+              <div class="card h-100" style="background-color: transparent; border: none;">
+                  <img src="lib/Foto.jpeg" class="card-img-top" alt="" style="border-radius: 200px;border-color: black;">
+                  <div class="card-body">
+                    <center>  <h5 class="card-title">Fotrografo</h5></center>
+                     <center> <p class="card-text" >
+                      "Capturando momentos especiales con creatividad y profesionalismo, ofrezco servicios de fotografía para bodas,
+                       retratos, eventos y más. Con un enfoque en la emoción y la belleza de cada momento, estoy comprometido a crear 
+                       recuerdos duraderos que atesorarás para siempre.
+                       ¡Contáctame hoy para reservar tu sesión de fotos!"</p> </center><br>
+                       <center> <button class="button-51" role="button">Obtener Servicio</button></center>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Otro servicio-->
+           
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100" style="background-color: transparent; border: none;">
+                <img src="lib/Profesora.jpeg" class="card-img-top" alt="" style="border-radius: 200px;border-color: black;">
+                <div class="card-body">
+                  <center>  <h5 class="card-title">Profesora</h5></center>
+                   <center> <p class="card-text" >"Ofrezco servicios de enseñanza personalizada en la comodidad de tu hogar. Como profesora a domicilio, m
+                    e dedico a brindar apoyo educativo adaptado a las necesidades individuales de cada estudiante..</p> </center>
+                    <br>
+                    <center> <button class="button-51" role="button">Obtener Servicio</button></center>
+                
+                  </div>
+            </div>
+        </div>
         </div>
     </div>
 </section>
@@ -173,14 +219,14 @@ form{
 
 
 
-<Body>
+
 
 
     
         <!-- Footer -->
         <footer class="bg-dark text-white py-4">
             <div class="container text-center">
-                <p>&copy; 2024 ServiWeb. Todos los derechos reservados.</p>
+                <p>&copy; 2024 ServiLand. Todos los derechos reservados.</p>
             </div>
         </footer>
         
